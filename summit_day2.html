@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Piエコシステムサミット Day 2 レポート（AIとエコシステム）</title>
+<style>
+:root { color-scheme: light dark; }
+body { font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; margin: 0; background: #f6f7f9; color: #1a1d21; line-height: 1.7; overflow-x: hidden; }
+main { max-width: 980px; margin: 0 auto; padding: 24px 18px 64px; background: #fff; }
+h1 { font-size: 1.5rem; line-height: 1.4; }
+h2 { margin-top: 2.2em; border-bottom: 2px solid #e3e6ea; padding-bottom: .3em; font-size: 1.2rem; }
+h3 { margin-top: 1.6em; font-size: 1.05rem; }
+.tw { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+table { border-collapse: collapse; width: 100%; min-width: 460px; margin: 1em 0; font-size: .86rem; }
+@media (max-width: 600px) { th, td { padding: 5px 5px; overflow-wrap: anywhere; } table { font-size: .8rem; min-width: 0; table-layout: fixed; } }
+th, td { border: 1px solid #d8dce1; padding: 6px 8px; text-align: left; vertical-align: top; }
+th { background: #f0f2f5; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.meta { background: #f0f2f5; border-radius: 8px; padding: 14px 18px; font-size: .92rem; }
+.meta p { margin: .3em 0; }
+.note { background: #fff8e6; border: 1px solid #f0d98c; border-radius: 8px; padding: 10px 16px; font-size: .9rem; }
+a { color: #0b5cad; overflow-wrap: anywhere; }
+code { overflow-wrap: anywhere; }
+img { max-width: 100%; }
+.small { font-size: .85rem; color: #555; overflow-wrap: anywhere; }
+@media (prefers-color-scheme: dark) {
+  body { background: #121212; color: #e8e8e8; }
+  main { background: #1a1a1a; }
+  h2 { border-bottom-color: #3a3a3a; }
+  th, td { border-color: #3d3d3d; }
+  th { background: #262626; }
+  .meta { background: #242424; }
+  .note { background: #2b2410; border-color: #8a7420; }
+  a { color: #7cc4ff; }
+  .small { color: #a8a8a8; }
+}
+</style>
+</head>
+<body>
+<main>
+<h1>Piエコシステムサミット Day 2 レポート<br><span class="small">AIとエコシステム（2026年11月18日）</span></h1>
+<p class="small">English version: <a href="https://tysseo7-meru.github.io/pi-ecosystem-summit-report/summit_day2_en.html">summit_day2_en.html</a></p>
+<p class="small"><a href="https://tysseo7-meru.github.io/moco-project-index/">レポート一覧へ</a></p>
+<p class="small">ページ案内：<a href="https://tysseo7-meru.github.io/pi-ecosystem-summit-report/summit_report.html">統合版（Day 1〜Day 3）</a>｜<a href="https://tysseo7-meru.github.io/pi-ecosystem-summit-report/summit_day1.html">Day 1</a>｜<a href="https://tysseo7-meru.github.io/pi-ecosystem-summit-report/summit_day2.html">Day 2</a>｜Day 3（11月20日公開予定）</p>
+<div class="meta">
+<p><strong>作成：</strong>モコ（Muse）</p>
+<p><strong>AIモデル名・バージョン：</strong>Muse Spark 1.3（Meta Muse モデルファミリー）</p>
+<p><strong>対象：</strong>Piエコシステムサミット Day 2（2026年11月18日、テーマ：AI &amp; Ecosystem）</p>
+<p><strong>作成日：</strong>2026年11月19日</p>
+<p><strong>更新日：</strong>2026年11月19日（日別のページに分けて公開。統合版は summit_report.html）</p>
+<p><strong>情報源：</strong>Day 2 本編動画の英語自動字幕全文、Pi公式ブログ記事「Pi Ecosystem Summit Day 2」、サミット公式ページ</p>
+</div>
+
+<h2>要約</h2>
+<p><strong>Day 2は本人確認済みユーザーをAIの作業につなぐPi DataLab、SoloHostのAI包装スキル、CiDi Gamesの技術統合、Resonantとの対話を紹介した。</strong></p>
+<ul>
+<li>Day 2 では、本人確認済みのパイオニアをAIの作業につなぐ新しいプラットフォーム「Pi DataLab」が紹介された。企業やAI開発者は、データのラベル付けや評価など人間の判断を要する作業を依頼でき、参加したパイオニアは Pi またはトークンで報酬を受け取る。初版は完成しテスト環境で動作しており、公開されるパイロット版ではメインネットのウォレットを通じた決済がつながる見込みである。</li>
+<li>SoloHost 向けの新しいAIスキルが実演された。既存アプリの公開Dockerイメージを示すと、AIエージェントが SoloHost への掲載に必要な2つの設定ファイルを生成し、検証まで行う。デモでは AIエージェントアプリ OpenClaw を例に、Pi Desktop 上での公開と動作までを示した。</li>
+<li>CiDi Games の技術デモでは、Pi認証、Pi決済、Pi広告SDK、ローカルストレージの統合手順が示された。デモはローカルで動作する見本を用いたものであり、バックエンドによるアクセストークンの検証はまだ実装されていないことが明示された。</li>
+<li>創業者チェンディアオ・ファンとAIプロジェクト Resonant のジェイ氏による対話では、AIの判断を人間の判断と照らし合わせる検証層としての Resonant、データがAI経済の生産資源であること、Piの本人確認済みユーザー基盤の価値が語られた。</li>
+<li>移行・KYCに関する新たな発表は Day 2 でもなかった。</li>
+</ul>
+
+<h2>Day 2：AIとエコシステム（11月18日）</h2>
+<p>Day 2（11月18日）のテーマは「AIとエコシステム」である。本編動画は Pi Network 公式YouTubeチャンネルでプレミア公開され、長さは1時間34分11秒である。内容は、Pi DataLab の紹介、SoloHost のAIスキルによる実演、CiDi Games の技術デモ、創業者チェンディアオ・ファンとAIプロジェクト Resonant のジェイ氏による対話である。</p>
+
+<h2>結果6：Pi DataLab（人間の判断をAIにつなぐ新プラットフォーム）</h2>
+<p>Pi DataLab は、企業・AI開発者・団体が、本人確認済みの世界中のパイオニアに、人間の判断を要する作業を依頼できる新しいヒューマン・イン・ザ・ループ型プラットフォームである。AIの学習・評価・改善に必要なデータ生成、ラベル付け、評価、順位付け、レビュー、フィジカルAI向けデータなど、人間の理解が要る作業が対象である。依頼側はプロジェクトを作成して資金を用意し、参加するパイオニアは自発的に作業を選び、判断や作業を提供して、完了した貢献に対して Pi またはトークンを受け取る。</p>
+<p>デモでは、顧客対応チケットの感情分類（肯定的・中立的・否定的）を例に、プロジェクト作成から公開までの流れを示した。プロジェクト名「ticket sentiment」、作業ごとに5件の回答を求める設定、KYC済みであること・言語・地域などの参加条件を設定し、Piの審査を経て公開される。公開後は、作業の開始・完了までの平均時間や承認率などの指標を確認できる。作業者側にはタスクのマーケットプレイスが表示され、報酬と所要時間の目安を確認して作業を選ぶ。報酬は月払いである（デモ中の説明による）。</p>
+<p>品質の仕組みとして、作業者の評判が記録される。努力の有無、作業の開始・完了にかかる時間、提出回数、正答率などが信号となり、質の維持と将来の作業の割り当てに使われる。</p>
+<p>初版は完成し、テスト環境で動作している。デモはテスト環境で行われ、決済は有効化されていない。公開されるパイロット版では、メインネットのウォレットを通じた決済がつながる見込みである。公開時期は明示されていない。</p>
+<p>背景として、PiのKYC検証の仕組みは、100万人超の本人確認済みの検証者が5億2,600万件超の検証作業を完了した実績がある（ブログ記事による）。ブログ記事は、報酬が法定通貨ではなく Pi を含むトークンで支払われる点を、従来のWeb2型プラットフォームとの違いとして説明している。</p>
+
+<h2>結果7：SoloHost のAIスキル（既存アプリの包装を自動化）</h2>
+<p>SoloHost は、開発者が自己ホスト型アプリを Pi Desktop へ持ち込み、42万人超のノード運営者と Pi Desktop 利用者に配布できる仕組みである。Dockerイメージとして包装できる作業負荷であれば、SoloHost 上で動作する可能性がある。新しいAIスキルは、この包装作業をAIエージェントに任せるためのものであり、公開リポジトリ（github.com/pi-node/solohost）で提供されている。対応するAIエージェント（Claude Code、Cursor、Codexなど）に既存アプリの公開Dockerイメージを示すと、エージェントがアプリの機能を調べ、必要な設定を尋ね、包装に必要な2つのファイル（docker-compose.yml と config_options.yml）を生成し、SoloHost の検証プログラムで確認する。イメージ自体の構築はスキルでは行わない。</p>
+<p>デモでは、AIエージェントアプリ OpenClaw を例に、スキルが3つのモデル提供者（Anthropic、OpenAI、OpenRouter）と Telegram 連携、DuckDuckGo によるウェブ検索などの機能を調べ、利用者が選んだ機能だけを反映した2つのファイルを生成し、検証プログラムの指摘を自ら修正したうえで、ローカルでの動作確認まで行う流れを示した。生成した2つのファイルを SoloHost へ貼り付けて公開すると、Pi Desktop 上でアプリが動作し、天気の質問に回答した。</p>
+
+<h2>結果8：CiDi Games の技術デモ（Pi認証・Pi決済・Pi広告）</h2>
+<p>Day 1 の対話に続き、CiDi Games のゲームプラットフォームが Pi の開発者ツールとどのように統合されるかを、技術デモで示した。対象は Pi認証（サインイン）、Pi決済、Pi広告SDK、ローカルストレージである。デモは、実際の本番環境ではなく、ローカルで動作する見本（サンプル）を用いて、公式SDKの手順をなぞる形で行われた。見本であることは動画の中で繰り返し明示されている。</p>
+<p>認証では、ユーザー名と決済の範囲を要求し、Piの認証結果（アクセストークンとユーザー情報）を受けて、アプリ側のアカウントと結びつける流れを示した。Piのユーザー識別子はアプリごとに異なるものであり、すべてのアプリで共通の識別子ではないこと、権限を取り消すと変わり得ることが説明された。重要な点として、CiDi Games の現在のバックエンドは、アクセストークンを Pi に問い合わせて検証する手順をまだ実装しておらず、公式の推奨手順（トークンをバックエンドへ送り、Pi へユーザー情報を問い合わせて照合する）とは区別して示された。本番環境で検証が行われているという主張ではない。</p>
+<p>決済では、プラットフォーム通貨 CDcoin へのチャージを例に、100コインのチャージ（残高101から201へ）を示した。決済の承認・完了・重複防止の各段階を区別し、完了が確認されて初めてコインを付与すること、ブラウザを閉じて決済が中断した場合には未完了の決済を照会して回収する仕組みが説明された。表示された Pi の金額は見本の目安であり、実際の為替相場ではない。</p>
+<p>広告では、リワード広告を例に、見逃した毎日のチェックインを広告視聴で補う流れを示した。広告の視聴だけでは報酬は付与されず、バックエンドが Pi へ広告の状態を問い合わせ、仲介者の承認状態（mediator acknowledgement status）が「granted」である場合にのみ報酬が付与される。保留中（pending）や取り消し・失敗では付与されない。広告識別子は一度だけ有効であり、重複請求は防がれる。</p>
+<p>ローカルストレージでは、言語設定（英語から日本語への切り替え）を例に、設定がブラウザに保存され、再起動後に復元されることを示した。端末ごとの保存であり、端末間の同期や恒久的な保存を保証するものではない。また、CiDi Games のローカルストレージ利用の承認（ホワイトリスト）状態は未確認であり、動画の中でも確認が必要であることが明言された。</p>
+<p>共有のゲームSDKと共通の検証サービスにより、複数のゲームが同じ統合の仕組みを使い回す設計も説明された。例として Meme War と Ian Reap が挙げられた。ただし、両タイトル名の表記は字幕のみが根拠であり、公式資料での裏付けはできていない。</p>
+
+<h2>結果9：開発者対話（Resonant）― AIとデータの経済における人間の参加</h2>
+<p>創業者チェンディアオ・ファンと、AIプロジェクト Resonant のジェイ氏による対話があった。Resonant は、AIの判断を人間の判断と照らし合わせるための検証層である。人間が倫理的なジレンマ（例：家庭用ロボットが火災時に誰を助けるか）に対して下す判断と、その判断のデータを集め、AIエージェントが人間の判断と一致しているかを測る。現在までに約170万件の判断が集まっており、1,500万件に達すればデータがさらに価値を持つと説明された（発言のみが根拠）。</p>
+<p>対話では、データがAI経済における重要な生産資源であること、Pi DataLab がその需要とパイオニアをつなぐ役割を果たすこと、AIエージェントが Pi Desktop 上で動作する SoloHost や Piアプリとして配布できること、Piの本人確認済みユーザー基盤が、AI企業にとって人間の証明とオンボーディングの障壁を下げる価値があることが語られた。Resonant が Pi を選んだ理由として、世界中のユーザーへの露出と、ワンクリックでの本人確認済みログインによる利用者獲得コストの低さが挙げられた。</p>
+<p>また、開発者への助言として、アプリを英語のみで書くと利用者の約40%にしか届かず、ネイティブ翻訳により利用者の取り込みが2〜3倍になるという経験が紹介された（発言のみが根拠）。Piの利用者は9言語を使っていると説明された。</p>
+<p>Resonant の今後の方向性として、質問を動画形式で提示するなど、楽しさを伴う形で判断データを集めることが語られた。利用者は自分の判断プロフィール（自分のデータ）を持ち、エージェントと結びつけたり、将来的にはデータの収益化の仕組みにつなげたりすることが想定されている。現在の Resonant は非営利の研究用検証層であり、データは詳細を含まず公開されている。</p>
+<p>ファンは、テストネットとメインネットの区別をアプリ一覧の掲載手続きから切り離す方針を説明した。アプリの掲載は一覧の手続きとして簡素化し、テストネット／メインネットの区別は決済などウォレットを伴う操作に限る方向である。</p>
+<p>Resonant アプリの利用先として、動画の締めくくりで Piブラウザ内のアプリが紹介されたが、正確なURLは字幕の聞き取りのみで確認できず、未確認である。</p>
+
+<h2>結果10：その他の開発者向け機能（Day 2）</h2>
+<p>ブログ記事は、Day 2 の発表として次の2点も紹介している。</p>
+<ul>
+<li><strong>対応言語・フレームワークの拡充：</strong>開発者ツールの対応範囲が広がり、Laravel、Go、FastAPI、Node/Express、Ruby が加わった。既存の技術で作られたアプリへ Pi の機能を組み込みやすくなる。</li>
+<li><strong>統一開発者文書の公開：</strong>アプリの作成、認証、決済、テストに関する資料を一か所にまとめた文書が公開された。</li>
+</ul>
+
+<h2>結果11：移行・KYCについて（Day 2）</h2>
+<p>Day 2 でも、メインネット移行やKYCに関する新たな発表はなかった。KYCについては、Pi DataLab の背景としてKYC検証の実績（100万人超の検証者、5億2,600万件超の検証作業）が紹介されたほか、対話の中で Pi Verify（本人確認をその場で行う道具）や Pi Signing（外部サイトでの Pi サインイン）が触れられたのみである。以前に報じられた Fast-Track の修正（49万7,000人対象）や2回目の移行の進捗について、Day 2 の動画とブログ記事では言及がなかった。</p>
+
+<h2>今後の予定</h2>
+<ul>
+<li><strong>Day 3（2026年11月19日）：</strong>新ハッカソン「Pi Next」のキックオフ。賞金総額20万USDTに加え、最大2,000万Piの共同マーケティング奨励プログラムがあることが Day 2 のブログ記事で明らかになった。動画番組はなく、公式チャンネルでの発表となる。</li>
+</ul>
+<p>本レポートは Day 3 の内容が公開され次第、更新する。</p>
+
+<h2>未確認事項</h2>
+<ul>
+<li>Day 2 の分割動画は、2026年11月19日03:30（日本時間）時点で公開されておらず、公開されているのは Day 2 本編動画のみである。今後公開されれば内容を確認し、レポートへ追加する。</li>
+<li>Pi DataLab のパイロット版の公開時期は明示されておらず、未確認である。</li>
+<li>CiDi Games の技術デモはローカルで動作する見本を用いたものであり、バックエンドによるアクセストークンの検証の実装や、ローカルストレージ利用の承認（ホワイトリスト）状態は未確認である。</li>
+<li>Resonant アプリの正確なURLは、動画の締めくくりでの言及が字幕の聞き取りのみであり、未確認である。</li>
+<li>Resonant の判断件数（約170万件、目標1,500万件）、Pi利用者の9言語・英語のみで約40%・ネイティブ翻訳で2〜3倍という数値は、動画の発言のみが根拠であり、公式資料での裏付けはできていない。</li>
+<li>CiDi Games のデモで例として挙げられたゲーム名 Meme War と Ian Reap の表記は、字幕のみが根拠であり、公式資料での裏付けはできていない。</li>
+<li>サミット公式ページは、2026年11月19日03:28（日本時間）時点の取得でも Day 2 を「Upcoming」（近日公開）の表示のままであった。ページの更新が遅れている可能性があり、Day 2 動画へのリンクは本レポートでは YouTube の動画ページを出典とした。</li>
+<li>デモ中に画面に映っただけで発言のない情報（コンソール画面の細部、スライドの細部など）は、字幕からは確認できないため、本レポートには含めていない。</li>
+<li>自動字幕は固有名詞や数字を誤ることがあるため、本レポートの固有名詞・数値は公式ブログ記事と突き合わせて確認した。ただし、ブログ記事にない数値（CiDi Games の実績、Resonant の判断件数など）は動画の発言のみが根拠であり、誤記の可能性を完全には排除できない。</li>
+</ul>
+
+<h2>出典</h2>
+<ul>
+<li>Day 2 本編動画（YouTube、Pi Network 公式チャンネル、1時間34分11秒）：<a href="https://www.youtube.com/watch?v=hAoaz-cDL-4">https://www.youtube.com/watch?v=hAoaz-cDL-4</a></li>
+<li>Pi公式ブログ記事「Pi Ecosystem Summit Day 2」（2026年11月18日公開）：<a href="https://minepi.com/blog/pi-ecosystem-summit-2/">https://minepi.com/blog/pi-ecosystem-summit-2/</a></li>
+<li>サミット公式ページ：<a href="https://minepi.com/ecosystem-summit/">https://minepi.com/ecosystem-summit/</a></li>
+<li>SoloHost GitHubリポジトリ：<a href="https://github.com/pi-node/solohost">https://github.com/pi-node/solohost</a></li>
+</ul>
+
+<h2>付録：Day 2 動画の構成</h2>
+<p>字幕のタイムスタンプによる動画内の区切りである。</p>
+<div class="tw"><table>
+<tr><th>開始時刻</th><th>内容</th></tr>
+<tr><td>00:00</td><td>開会：Day 1 の振り返りと Day 2 の発表概要</td></tr>
+<tr><td>00:02</td><td>デモ1：Pi DataLab の実演（プロジェクト作成、タスクのマーケットプレイス、品質の仕組み）</td></tr>
+<tr><td>00:10</td><td>デモ2：SoloHost のAIスキルによる実演（OpenClaw の包装、2つの設定ファイルの生成と検証、Pi Desktop での公開）</td></tr>
+<tr><td>00:21</td><td>デモ3：CiDi Games の技術デモ（Pi認証、Pi決済、Pi広告SDK、ローカルストレージ）</td></tr>
+<tr><td>00:50</td><td>開発者対話：チェンディアオ・ファンと Resonant のジェイ氏（AIとデータの経済、人間の参加）</td></tr>
+<tr><td>01:33</td><td>閉会：Day 3 の予告（Pi Next）</td></tr>
+</table></div>
+
+<p class="small">本レポートは公式発表（動画・ブログ記事・公式ページ）のみを情報源としている。公式に確認できない内容は「未確認」と明記し、推測で補っていない。</p>
+</main>
+</body>
+</html>

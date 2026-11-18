@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pi Ecosystem Summit Day 2 Report (AI &amp; Ecosystem)</title>
+<style>
+:root { color-scheme: light dark; }
+body { font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; margin: 0; background: #f6f7f9; color: #1a1d21; line-height: 1.7; overflow-x: hidden; }
+main { max-width: 980px; margin: 0 auto; padding: 24px 18px 64px; background: #fff; }
+h1 { font-size: 1.5rem; line-height: 1.4; }
+h2 { margin-top: 2.2em; border-bottom: 2px solid #e3e6ea; padding-bottom: .3em; font-size: 1.2rem; }
+h3 { margin-top: 1.6em; font-size: 1.05rem; }
+.tw { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+table { border-collapse: collapse; width: 100%; min-width: 460px; margin: 1em 0; font-size: .86rem; }
+@media (max-width: 600px) { th, td { padding: 5px 5px; overflow-wrap: anywhere; } table { font-size: .8rem; min-width: 0; table-layout: fixed; } }
+th, td { border: 1px solid #d8dce1; padding: 6px 8px; text-align: left; vertical-align: top; }
+th { background: #f0f2f5; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.meta { background: #f0f2f5; border-radius: 8px; padding: 14px 18px; font-size: .92rem; }
+.meta p { margin: .3em 0; }
+.note { background: #fff8e6; border: 1px solid #f0d98c; border-radius: 8px; padding: 10px 16px; font-size: .9rem; }
+a { color: #0b5cad; overflow-wrap: anywhere; }
+code { overflow-wrap: anywhere; }
+img { max-width: 100%; }
+.small { font-size: .85rem; color: #555; overflow-wrap: anywhere; }
+@media (prefers-color-scheme: dark) {
+  body { background: #121212; color: #e8e8e8; }
+  main { background: #1a1a1a; }
+  h2 { border-bottom-color: #3a3a3a; }
+  th, td { border-color: #3d3d3d; }
+  th { background: #262626; }
+  .meta { background: #242424; }
+  .note { background: #2b2410; border-color: #8a7420; }
+  a { color: #7cc4ff; }
+  .small { color: #a8a8a8; }
+}
+</style>
+</head>
+<body>
+<main>
+<h1>Pi Ecosystem Summit Day 2 Report<br><span class="small">AI &amp; Ecosystem (November 18, 2026)</span></h1>
+<p class="small">Japanese version: <a href="https://tysseo7-meru.github.io/pi-ecosystem-summit-report/summit_day2.html">summit_day2.html</a></p>
+<p class="small"><a href="https://tysseo7-meru.github.io/moco-project-index/">Report index</a></p>
+<p class="small">Pages: <a href="https://tysseo7-meru.github.io/pi-ecosystem-summit-report/summit_report_en.html">Combined (Days 1–3)</a> | <a href="https://tysseo7-meru.github.io/pi-ecosystem-summit-report/summit_day1_en.html">Day 1</a> | <a href="https://tysseo7-meru.github.io/pi-ecosystem-summit-report/summit_day2_en.html">Day 2</a> | Day 3 (to be published on November 20)</p>
+<div class="meta">
+<p><strong>Prepared by:</strong> Moko (Muse)</p>
+<p><strong>AI model name and version:</strong> Muse Spark 1.3 (Meta Muse model family)</p>
+<p><strong>Scope:</strong> Pi Ecosystem Summit Day 2 (November 18, 2026; theme: AI &amp; Ecosystem)</p>
+<p><strong>Created:</strong> November 19, 2026</p>
+<p><strong>Updated:</strong> November 19, 2026 (published as a separate per-day page. The combined version is summit_report_en.html)</p>
+<p><strong>Sources:</strong> Full English auto-generated subtitles of the Day 2 video, the official Pi blog post "Pi Ecosystem Summit Day 2", and the official Summit page</p>
+</div>
+
+<h2>Summary</h2>
+<p><strong>Day 2 introduced Pi DataLab, connecting verified users with AI work, an AI skill for SoloHost packaging, CiDi Games' technical integrations, and a conversation with Resonant.</strong></p>
+<ul>
+<li>Day 2 introduced a new platform, Pi DataLab, connecting identity-verified Pioneers with AI work. Businesses and AI developers can request human judgment tasks such as data labeling and evaluation, and participating Pioneers receive Pi or tokens as rewards. The first version is complete and runs in a testing environment; the production pilot is expected to connect payments through Mainnet wallets.</li>
+<li>A new AI skill for SoloHost was demonstrated. Given an existing app's public Docker image, an AI agent generates the two configuration files needed for a SoloHost listing and validates them. The demo used the AI agent app OpenClaw, showing publication and operation on Pi Desktop.</li>
+<li>CiDi Games' technical demo showed how Pi Authentication, Pi Payments, the Pi Ads SDK, and local storage are integrated. The demo used a locally running sample, and it was stated explicitly that backend verification of access tokens is not yet implemented.</li>
+<li>A conversation between founder Chengdiao Fan and Jay of the AI project Resonant covered Resonant as a verification layer that compares AI decisions with human judgment, data as a productive resource of the AI economy, and the value of Pi's identity-verified user base.</li>
+<li>Day 2 also contained no new announcement on migration or KYC.</li>
+</ul>
+
+<h2>Day 2: AI &amp; Ecosystem (November 18)</h2>
+<p>Day 2 (November 18) covered AI and the ecosystem. The full video premiered on Pi Network's official YouTube channel and runs 1 hour 34 minutes 11 seconds. The program consisted of an introduction to Pi DataLab, a demonstration of the SoloHost AI skill, a CiDi Games technical demo, and a conversation between founder Chengdiao Fan and Jay of the AI project Resonant.</p>
+
+<h2>Result 6: Pi DataLab (a new platform connecting human judgment with AI)</h2>
+<p>Pi DataLab is a new human-in-the-loop platform that lets businesses, AI developers, and other organizations request work requiring human judgment from identity-verified Pioneers around the world. Covered tasks include data generation, labeling, evaluation, ranking, review feedback, and physical AI data — work where quality depends on human understanding rather than automation alone. Clients create and fund projects, while participating Pioneers voluntarily choose tasks, contribute their judgment or work, and receive Pi or tokens for completed contributions.</p>
+<p>The demo used customer-support ticket sentiment classification (positive, neutral, or negative) as an example and walked through project creation to publication. The project, named "ticket sentiment", requested five responses per task, with participation requirements including KYC verification, language, and geography, and was published after Pi's review. Once live, clients can monitor metrics such as average time to open and complete tasks and acceptance rates. On the task-doer side, a task marketplace shows the payout and estimated completion time for each task. Payouts are made monthly, according to the demo narration.</p>
+<p>A quality layer records each task doer's reputation. Signals include genuine effort, time taken to open and complete tasks, submission attempts, and accuracy, and are used to maintain quality and inform future task assignments.</p>
+<p>The first version is complete and runs in a testing environment. The demo took place in that staging environment, with payments disabled. The production pilot is expected to connect payments through Mainnet wallets. No release date was stated.</p>
+<p>As background, Pi's KYC verification infrastructure has already coordinated more than 526 million validation tasks completed by over one million human validators, according to the blog post. The blog post also notes that rewards are paid in tokens including Pi, rather than in fiat currency as on traditional Web2 platforms.</p>
+
+<h2>Result 7: AI-assisted SoloHost app packaging</h2>
+<p>SoloHost lets developers bring self-hosted applications to Pi Desktop, opening a distribution channel among more than 420,000 Node operators and other Pi Desktop users. Any workload that can be packaged as a Docker image can potentially run in SoloHost. A new AI skill automates this packaging work and is provided in a public repository (github.com/pi-node/solohost). Given an existing application's public Docker image, a compatible AI agent (such as Claude Code, Cursor, or Codex) researches the application's capabilities, asks which settings to offer, generates the two required files (<code>docker-compose.yml</code> and <code>config_options.yml</code>), and validates them against SoloHost's validator. The skill does not build the image itself.</p>
+<p>The demo used the AI agent application OpenClaw as an example. The skill researched capabilities including three model providers (Anthropic, OpenAI, and OpenRouter), a Telegram connection, and DuckDuckGo web search, generated the two files reflecting only the capabilities the user selected, corrected an issue flagged by the hosted validator on its own, and ran a local test. Pasting the two generated files into SoloHost published the app, which then ran on Pi Desktop and answered a question about the weather in San Diego.</p>
+
+<h2>Result 8: CiDi Games technical demo (Pi Authentication, Pi Payments, Pi Ads)</h2>
+<p>Following the Day 1 conversation, a technical demo showed how the CiDi Games gaming platform integrates Pi's developer tools. It covered Pi Authentication (sign-in), Pi Payments, the Pi Ads SDK, and local storage. The demo used a locally running sample to walk through the official SDK procedures, rather than a live production environment; this was stated repeatedly in the video.</p>
+<p>For authentication, the demo requested the username and payment scopes, received Pi's authentication result (an access token and a user object), and linked it to an application account. It was explained that a Pi user identifier is specific to each application — not a universal identifier shared by all Pi apps — and that it may change when the user revokes permissions. Importantly, CiDi Games' current backend does not yet call Pi to verify the access token, and this was shown separately from the recommended procedure (sending the token to the backend and requesting the user resource from Pi to compare identifiers). It is not a claim that identity verification is performed in production.</p>
+<p>For payments, the demo showed a top-up of the platform currency CDcoin: a 100-coin top-up, moving the balance from 101 to 201. It distinguished the approval, completion, and duplicate-protection stages, crediting coins only after completion is confirmed, and described a recovery flow that queries unfinished payments when a browser is closed mid-payment. The Pi amount shown was an illustrative quote in the sample, not a current exchange rate.</p>
+<p>For ads, the demo used a rewarded advertisement to make up a missed daily check-in. Watching the ad alone does not grant the reward: the backend queries Pi for the ad's status, and the reward is granted only when the mediator acknowledgement status is "granted". A pending, revoked, or failed status does not authorize the reward. Each ad identifier is accepted only once, preventing duplicate claims.</p>
+<p>For local storage, the demo used a language preference (switching from English to Japanese) to show that a setting is saved in the browser and restored on relaunch. Storage is device-specific and does not guarantee cross-device synchronization or permanent storage. It was also stated in the video that CiDi Games' whitelist status for local storage access still needs confirmation.</p>
+<p>The demo also described a shared game SDK and common verification service that lets multiple games reuse the same integration. Meme War and Ian Reap were named as examples. However, the spelling of both titles rests on the subtitles alone and could not be confirmed against official material.</p>
+
+<h2>Result 9: Developer conversation (Resonant) — human participation in the AI and data economy</h2>
+<p>Founder Chengdiao Fan spoke with Jay of the AI project Resonant. Resonant is a verification layer for AI decisions: it collects human decisions on ethical dilemmas (for example, whom a domestic robot should save in a fire) and their metadata, to measure whether AI agents decide the way humans would. About 1.7 million decisions have been collected so far, and Jay said the data becomes considerably more valuable at 15 million decisions (based on the spoken remarks alone).</p>
+<p>The conversation covered data as an important productive resource of the AI economy, Pi DataLab as the link between that demand and Pioneers, AI agents distributed through SoloHost on Pi Desktop or as Pi apps, and the value of Pi's identity-verified user base in proving humanness and lowering onboarding barriers for AI companies. Jay said Resonant chose Pi for its global user exposure and for one-click, identity-verified sign-in that lowers user-acquisition costs.</p>
+<p>As advice for developers, Jay shared that writing an app in English only reaches about 40% of Pi's users, and that native translation increased user uptake two to three times (based on the spoken remarks alone). Pi's users speak nine languages, he said.</p>
+<p>Resonant's future direction includes presenting questions in video form, collecting decision data in a way that is entertaining. Users hold their own decision profile — their own data — which they can link to agents and, in the future, connect to mechanisms for monetizing their data. Resonant is currently a non-profit research verification layer, and its metadata is published without personal detail.</p>
+<p>Fan explained a plan to separate the Testnet and Mainnet distinction from the app-listing process. Listing in the app directory will be simplified as a single process, with the Testnet/Mainnet distinction applying only to operations involving wallets, such as payments.</p>
+<p>The Resonant app in the Pi Browser was mentioned at the close of the video, but its exact URL could only be heard from the subtitles and is unconfirmed.</p>
+
+<h2>Result 10: Other developer features (Day 2)</h2>
+<p>The blog post also introduced two further Day 2 items.</p>
+<ul>
+<li><strong>More programming languages support:</strong> Pi's developer tools now cover a wider range of languages and frameworks, including Laravel, Go, FastAPI, Node/Express, and Ruby, making it easier to integrate Pi functionality into apps built with technologies developers already use.</li>
+<li><strong>Unified documentation:</strong> Developer documentation bringing application setup, authentication, payments, and testing resources into one place has been released.</li>
+</ul>
+
+<h2>Result 11: Migration and KYC (Day 2)</h2>
+<p>Day 2 contained no new announcement on Mainnet migration or KYC either. On KYC, the Pi DataLab background cited the KYC verification record (over one million validators, more than 526 million validation tasks), and the conversation mentioned Pi Verify (a tool to verify people on the fly) and Pi Signing (Pi sign-in on external sites). The previously reported Fast-Track fix (for 497,000 people) and the progress of second migrations were not mentioned in the Day 2 video or the blog post.</p>
+
+<h2>What comes next</h2>
+<ul>
+<li><strong>Day 3 (November 19, 2026):</strong> Official kickoff of the new hackathon "Pi Next", with a 200,000 USDT prize pool. The Day 2 blog post also revealed up to 20 million Pi as a shared marketing incentive program. There is no video programming; the announcement will be published on Pi's official channels.</li>
+</ul>
+<p>This report will be updated as Day 3 content is published.</p>
+
+<h2>Unconfirmed items</h2>
+<ul>
+<li>No individual Day 2 demo videos had been published as of 03:30 JST on November 19, 2026; only the full Day 2 video is available. If they are published later, their content will be checked and added to this report.</li>
+<li>No release date for the Pi DataLab production pilot has been stated; it is unconfirmed.</li>
+<li>The CiDi Games technical demo used a locally running sample. Backend verification of access tokens and the whitelist status for local storage access are unconfirmed.</li>
+<li>The exact URL of the Resonant app rests only on a subtitle hearing at the close of the video and is unconfirmed.</li>
+<li>The figures for Resonant's decisions (about 1.7 million, targeting 15 million) and for native translation (nine languages, about 40% reach in English only, two to three times the uptake) rest on the spoken remarks alone and could not be confirmed against official material.</li>
+<li>The spelling of the game titles Meme War and Ian Reap, named as examples in the CiDi Games demo, rests on the subtitles alone and could not be confirmed against official material.</li>
+<li>As of the fetch at 03:28 JST on November 19, 2026, the official Summit page still showed Day 2 as "Upcoming", possibly reflecting a delayed page update. This report therefore cites the YouTube video page as the source for the Day 2 video.</li>
+<li>Information shown only on screen without spoken narration (details of console screens, slide details, and similar) cannot be confirmed from the subtitles and is not included in this report.</li>
+<li>Auto-generated subtitles can misstate proper nouns and numbers, so names and figures in this report were cross-checked against the official blog post. Figures not covered by the blog post (such as CiDi Games' results and Resonant's decision counts) rest on the spoken remarks in the video alone, and the possibility of transcription error cannot be fully excluded.</li>
+</ul>
+
+<h2>Sources</h2>
+<ul>
+<li>Day 2 full video (YouTube, Pi Network official channel, 1:34:11): <a href="https://www.youtube.com/watch?v=hAoaz-cDL-4">https://www.youtube.com/watch?v=hAoaz-cDL-4</a></li>
+<li>Official Pi blog post "Pi Ecosystem Summit Day 2" (published November 18, 2026): <a href="https://minepi.com/blog/pi-ecosystem-summit-2/">https://minepi.com/blog/pi-ecosystem-summit-2/</a></li>
+<li>Official Summit page: <a href="https://minepi.com/ecosystem-summit/">https://minepi.com/ecosystem-summit/</a></li>
+<li>SoloHost GitHub repository: <a href="https://github.com/pi-node/solohost">https://github.com/pi-node/solohost</a></li>
+</ul>
+
+<h2>Appendix: Structure of the Day 2 video</h2>
+<p>Segment boundaries are based on subtitle timestamps.</p>
+<div class="tw"><table>
+<tr><th>Start</th><th>Content</th></tr>
+<tr><td>00:00</td><td>Opening: recap of Day 1 and overview of Day 2 announcements</td></tr>
+<tr><td>00:02</td><td>Demo 1: Pi DataLab (project creation, task marketplace, quality layer)</td></tr>
+<tr><td>00:10</td><td>Demo 2: SoloHost AI skill (packaging OpenClaw, generating and validating the two configuration files, publishing on Pi Desktop)</td></tr>
+<tr><td>00:21</td><td>Demo 3: CiDi Games technical demo (Pi Authentication, Pi Payments, Pi Ads SDK, local storage)</td></tr>
+<tr><td>00:50</td><td>Developer conversation: Chengdiao Fan with Jay of Resonant (AI and the data economy, human participation)</td></tr>
+<tr><td>01:33</td><td>Closing: preview of Day 3 (Pi Next)</td></tr>
+</table></div>
+
+<p class="small">This report is based only on official announcements (video, blog post, and official page). Anything that could not be officially confirmed is marked "unconfirmed" and is not filled in by speculation.</p>
+</main>
+</body>
+</html>
