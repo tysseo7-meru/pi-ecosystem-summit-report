@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Piエコシステムサミット Day 1 レポート（開発者プラットフォーム、エコシステム施策）</title>
+<title>Piエコシステムサミット Day 1 レポート（開発者プラットフォーム、エコシステム施策、アプリ紹介）</title>
 <style>
 :root { color-scheme: light dark; }
 body { font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; margin: 0; background: #f6f7f9; color: #1a1d21; line-height: 1.7; overflow-x: hidden; }
@@ -39,8 +39,8 @@ img { max-width: 100%; }
 </head>
 <body>
 <main>
-<h1>Piエコシステムサミット Day 1 レポート<br><span class="small">開発者プラットフォーム、エコシステム施策（2026年11月17日）</span></h1>
-<p class="small">English version: <a href="https://tysseo7-meru.github.io/pi-ecosystem-summit-report/summit_report_en.html">summit_day1_en.html</a></p>
+<h1>Piエコシステムサミット Day 1 レポート<br><span class="small">開発者プラットフォーム、エコシステム施策、アプリ紹介（2026年11月17日）</span></h1>
+<p class="small">English version: <a href="https://tysseo7-meru.github.io/pi-ecosystem-summit-report/summit_report_en.html">summit_report_en.html</a></p>
 <p class="small"><a href="https://tysseo7-meru.github.io/moco-project-index/">レポート一覧へ</a></p>
 <p class="small">ページ案内：<a href="https://tysseo7-meru.github.io/pi-ecosystem-summit-report/summit_combined.html">統合版（Day 1〜Day 3）</a>｜<a href="https://tysseo7-meru.github.io/pi-ecosystem-summit-report/summit_report.html">Day 1</a>｜<a href="https://tysseo7-meru.github.io/pi-ecosystem-summit-report/summit_day2.html">Day 2</a>｜Day 3（11月20日公開予定）</p>
 <div class="meta">
@@ -48,19 +48,19 @@ img { max-width: 100%; }
 <p><strong>AIモデル名・バージョン：</strong>Muse Spark 1.3（Meta Muse モデルファミリー）</p>
 <p><strong>対象：</strong>Piエコシステムサミット Day 1（2026年11月17日、テーマ：Developer Platform, Ecosystem Initiatives &amp; Showcases）</p>
 <p><strong>作成日：</strong>2026年11月18日</p>
-<p><strong>更新日：</strong>2026年11月19日（Day 1 のページとして公開。統合版は summit_combined.html）</p>
+<p><strong>更新日：</strong>2026年11月18日（v1、Day 1 時点の内容。Day 2・Day 3 の内容は後日追加する）</p>
 <p><strong>情報源：</strong>Day 1 本編動画の英語自動字幕全文、Pi公式ブログ記事「Ecosystem Summit Begins」、サミット公式ページ</p>
 </div>
 
 <h2>要約</h2>
-<p><strong>Pi初のエコシステムサミット。Day 1はAI支援の開発者コンソールとMCP、最大2,000万Piの成長支援、定期課金とx402決済を実証した。</strong></p>
+<p><strong>Pi初のエコシステムサミット初日。AI支援の開発者コンソールとMCP、最大2,000万Piの成長支援、アプリ一覧刷新、Launchpad等の2027年第1四半期メインネット化、定期課金とx402決済を実証した。</strong></p>
 <ul>
 <li>AI支援の開発者体験が中心であった。新しい開発者ウェブコンソールとMCPサーバーにより、AIコーディングエージェントがアプリの作成・登録、設定、Pi認証・Pi決済の組み込み、掲載申請までを代行する。創業者ニコラス・コッカリスによるデモでは、マルチプレイ対応の三目並べアプリを一から構築し、通知と決済（支払いと返金）までを通した。</li>
 <li>Pi財団が資金を出す App Growth Initiative が発表された。予算は最大2,000万Piで、対象アプリは実績に応じてその一部を使い、KYC済みユーザーの獲得と参加を促す。参加条件と報酬額の詳細は後日発表される。</li>
 <li>Piアプリ一覧（ディレクトリ）が刷新された。既存のステーキングによる順位付けを残しつつ、「ブックマーク」「ステーキング済み」「上昇中」「発見」「何度も戻ってくる」といった新しい区分が追加された。</li>
 <li>Pi Launchpad、分散型取引所（DEX）、自動マーケットメーカー（AMM）は2027年第1四半期にメインネットへ移行する。Launchpadを通じた初のメインネットトークン発行も含まれる。</li>
 <li>オンチェーン定期課金スマートコントラクトと x402 決済がテストネットで実証された。定期課金は2026年4月にテストネットへ初導入されたものである。x402 では OpenMind の RoboPay がロボットへの支払い（0.01テストPi）を実演した。</li>
-<li>移行・KYCに関する新たな発表は Day 1 ではなかった。KYC完了ユーザー数は1,810万人超と紹介されたのみである。</li>
+<li>移行・KYCに関する新たな発表は Day 1 にはなかった。KYC完了ユーザー数は1,810万人超と紹介されたのみである。</li>
 </ul>
 
 <h2>サミットと Day 1 の位置づけ</h2>
@@ -133,15 +133,23 @@ img { max-width: 100%; }
 <h2>結果5：移行・KYCについて</h2>
 <p>Day 1 では、メインネット移行やKYCに関する新たな発表はなかった。KYCについては、冒頭で KYC完了ユーザー数が1,810万人超と紹介されたほか、CiDi Games との対話の中で KYC調査の質問票の協力事例が触れられたのみである。以前に報じられた Fast-Track の修正（49万7,000人対象）や2回目の移行の進捗について、Day 1 の動画とブログ記事では言及がなかった。</p>
 
+<h2>今後の予定</h2>
+<ul>
+<li><strong>Day 2（2026年11月18日、テーマ：AIとエコシステム）：</strong>AI開発者を支える新しい Pi インフラ、SoloHost 開発を支援する新しいAIツールのデモ、資金提供者との対話が予定されている。Day 1 と同じく YouTube プレミア公開（太平洋時間午前8時／UTC午後4時）である。</li>
+<li><strong>Day 3（2026年11月19日）：</strong>新ハッカソン「Pi Next」のキックオフ。賞金総額20万USDT。動画番組はなく、公式チャンネルでの発表となる。</li>
+</ul>
+<p>本レポートは Day 2・Day 3 の内容が公開され次第、更新する。</p>
+
 <h2>未確認事項</h2>
 <ul>
-<li>Day 1 のデモ分割動画（4本）は、2026年11月19日時点で Pi Network 公式YouTubeチャンネルに公開されている。</li>
+<li>各デモの分割動画（個別動画）は、2026年11月18日2時時点では Pi Network 公式YouTubeチャンネルに公開されていない。公開されているのは Day 1 本編動画のみである。今後公開されれば内容を確認し、レポートへ追加する。</li>
 <li>App Growth Initiative の参加条件と報酬額は、ブログ記事で「後日発表」と明記されている。現時点では未確認である。</li>
 <li>x402 決済のメインネット対応時期は未定であり、ブログ記事では「今後共有される」とされている。</li>
 <li>Launchpadを通じた初のメインネットトークン発行について、対象プロジェクト名や具体的な日時は発表されていない。</li>
 <li>CiDi Games の NFT 化や独自トークンの計画は、同社の社内での方向性であり、確定していない。独自トークンについては Pi Core Team との協議前である。</li>
 <li>デモ中に画面に映っただけで発言のない情報（コンソール画面の細部、スライドの細部など）は、字幕からは確認できないため、本レポートには含めていない。</li>
-<li>自動字幕は固有名詞や数字を誤ることがあるため、本レポートの固有名詞・数値は公式ブログ記事と突き合わせて確認した。ただし、ブログ記事にない数値（CiDi Games の実績、Resonant の判断件数など）は動画の発言のみが根拠であり、誤記の可能性を完全には排除できない。</li>
+<li>サミット公式ページは、2026年11月17日17時56分（UTC）時点の取得では Day 1 を「Upcoming」（近日公開）の表示のままであった。ページの更新が遅れている可能性があり、Day 1 動画へのリンクは本レポートでは YouTube の動画ページを出典とした。</li>
+<li>自動字幕は固有名詞や数字を誤ることがあるため、本レポートの固有名詞・数値は公式ブログ記事と突き合わせて確認した。ただし、ブログ記事にない数値（CiDi Games の実績など）は動画の発言のみが根拠であり、誤記の可能性を完全には排除できない。</li>
 </ul>
 
 <h2>出典</h2>
