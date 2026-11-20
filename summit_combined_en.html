@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pi Ecosystem Summit Combined Report (Developer Platform, Ecosystem Initiatives &amp; AI and Ecosystem)</title>
+<title>Pi Ecosystem Summit Combined Report (Developer Platform, Ecosystem Initiatives &amp; AI and Ecosystem, Pi Next Hackathon)</title>
 <style>
 :root { color-scheme: light dark; }
 body { font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; margin: 0; background: #f6f7f9; color: #1a1d21; line-height: 1.7; overflow-x: hidden; }
@@ -39,21 +39,21 @@ img { max-width: 100%; }
 </head>
 <body>
 <main>
-<h1>Pi Ecosystem Summit Combined Report<br><span class="small">Developer Platform, Ecosystem Initiatives &amp; AI and Ecosystem (November 17–18, 2026)</span></h1>
+<h1>Pi Ecosystem Summit Combined Report<br><span class="small">Developer Platform, Ecosystem Initiatives &amp; AI and Ecosystem, Pi Next Hackathon (November 17–19, 2026)</span></h1>
 <p class="small">Japanese version: <a href="https://tysseo7-meru.github.io/pi-ecosystem-summit-report/summit_combined.html">summit_report.html</a></p>
 <p class="small"><a href="https://tysseo7-meru.github.io/moco-project-index/">Report index</a></p>
-<p class="small">Pages: <a href="https://tysseo7-meru.github.io/pi-ecosystem-summit-report/summit_combined_en.html">Combined (Days 1–3)</a> | <a href="https://tysseo7-meru.github.io/pi-ecosystem-summit-report/summit_report_en.html">Day 1</a> | <a href="https://tysseo7-meru.github.io/pi-ecosystem-summit-report/summit_day2_en.html">Day 2</a> | Day 3 (to be published on November 20)</p>
+<p class="small">Pages: <a href="https://tysseo7-meru.github.io/pi-ecosystem-summit-report/summit_combined_en.html">Combined (Days 1–3)</a> | <a href="https://tysseo7-meru.github.io/pi-ecosystem-summit-report/summit_report_en.html">Day 1</a> | <a href="https://tysseo7-meru.github.io/pi-ecosystem-summit-report/summit_day2_en.html">Day 2</a> | <a href="https://tysseo7-meru.github.io/pi-ecosystem-summit-report/summit_day3_en.html">Day 3</a></p>
 <div class="meta">
 <p><strong>Prepared by:</strong> Moko (Muse)</p>
 <p><strong>AI model name and version:</strong> Muse Spark 1.3 (Meta Muse model family)</p>
-<p><strong>Scope:</strong> Pi Ecosystem Summit Day 1 (November 17, 2026; theme: Developer Platform, Ecosystem Initiatives &amp; Showcases) and Day 2 (November 18, 2026; theme: AI &amp; Ecosystem)</p>
+<p><strong>Scope:</strong> Pi Ecosystem Summit Day 1 (November 17, 2026; theme: Developer Platform, Ecosystem Initiatives &amp; Showcases) , Day 2 (November 18, 2026; theme: AI &amp; Ecosystem), and Day 3 (November 19, 2026; theme: Pi Next Hackathon kickoff)</p>
 <p><strong>Created:</strong> November 18, 2026</p>
-<p><strong>Updated:</strong> November 19, 2026 (v2, reorganized by topic as the combined edition and rewritten in plain language. Day 3 content will be added later.)</p>
-<p><strong>Sources:</strong> Full English auto-generated subtitles of the Day 1 and Day 2 videos, the official Pi blog posts "Ecosystem Summit Begins" and "Pi Ecosystem Summit Day 2", and the official Summit page</p>
+<p><strong>Updated:</strong> November 20, 2026 (v3, final. Day 3 content added and reorganized by topic.)</p>
+<p><strong>Sources:</strong> Full English auto-generated subtitles of the Day 1 and Day 2 videos, the official Pi blog posts "Ecosystem Summit Begins" and "Pi Ecosystem Summit Day 2", the official Summit page, the official Pi Next page, and the Pi Next registration page</p>
 </div>
 
 <h2>Summary</h2>
-<p><strong>This was Pi Network's first Ecosystem Summit, an online event for the developers who build apps on Pi. The biggest theme was letting AI assistants do much of the work of building Pi apps: a new Developer Web Console and an MCP server let AI coding tools create apps and connect them to Pi. Pi also announced an App Growth Initiative with a budget of up to 20 million Pi to help apps attract users, and showed subscription payments and a payment method called x402 working on Testnet (Pi's test network). Also introduced: Pi DataLab, which connects identity-verified users with AI-related tasks; an AI skill that packages apps for SoloHost; a technical demo by the game company CiDi Games; and a conversation with the AI project Resonant.</strong></p>
+<p><strong>Pi's first Ecosystem Summit: an AI-assisted developer console and MCP server, an App Growth Initiative of up to 20 million Pi, and Testnet demonstrations of on-chain subscriptions and x402 payments. It also introduced Pi DataLab, connecting verified users with AI work, an AI skill for SoloHost packaging, CiDi Games' technical integrations, a conversation with Resonant, and — on the final day — the Pi Next hackathon, with 200,000 USDT in prizes.</strong></p>
 <ul>
 <li>The centerpiece was a new way of building apps with AI help. In the new Developer Web Console (a website where developers manage their Pi apps) and through an MCP server, an AI coding assistant can create and register an app, set it up, connect Pi sign-in (Pi Authentication) and Pi Payments, and apply to have the app listed. In a demo, founder Nicolas Kokkalis had an AI assistant build a multiplayer tic-tac-toe game from nothing, complete with notifications and payments (both charging players and refunding them).</li>
 <li>The App Growth Initiative, paid for by the Pi Foundation, was announced with a budget of up to 20 million Pi. Apps that qualify can use part of that budget, based on their merit and performance, to attract and engage users who have completed KYC (identity verification). The exact rules for qualifying and the reward amounts will be announced later.</li>
@@ -64,11 +64,12 @@ img { max-width: 100%; }
 <li>An AI skill for SoloHost was demonstrated. SoloHost lets people run apps on their own computers through Pi Desktop. Given the public Docker image of an existing app (a packaged copy of the app, ready to run), an AI agent writes the two configuration files needed to list the app on SoloHost and checks that they are correct. The demo used an AI agent app called OpenClaw and showed it being published and running on Pi Desktop.</li>
 <li>A technical demo by CiDi Games showed how a game connects to Pi: Pi Authentication for sign-in, Pi Payments, the Pi Ads SDK (a toolkit for putting ads in apps), and local storage (saving data on the user's own device). The demo ran on a sample on a local computer, not on a live service, and CiDi stated plainly that its server does not yet verify users' access tokens (the digital passes issued at sign-in), a step the recommended procedure calls for.</li>
 <li>Founder Chengdiao Fan talked with Jay of the AI project Resonant. They discussed Resonant, which checks AI decisions against human judgment; data as a productive resource (a basic raw material) of the AI economy; and the value of Pi's large base of identity-verified users.</li>
-<li>Day 1 and Day 2 contained no new announcement on migration or KYC. Migration means moving users' Pi balances onto Mainnet. The number of fully KYC-verified users, over 18.1 million, was mentioned only as a figure for the size of the ecosystem.</li>
+<li>On the final day, the new hackathon "Pi Next" opened. Its prize pool of 200,000 USDT splits into a 50,000 USDT Judges' Pick award and 150,000 USDT in Community Engagement Awards, with up to 20 million Pi in marketing support as a separate program. Developers build their app in the Developer Web Console or on SoloHost, and final submissions are due January 5, 2027 (January 6, 16:59 JST).</li>
+<li>No day of the summit contained a new announcement on migration or KYC. Migration means moving users' Pi balances onto Mainnet. The number of fully KYC-verified users, over 18.1 million, was mentioned only as a figure for the size of the ecosystem.</li>
 </ul>
 
 <h2>About the Summit</h2>
-<p>The Pi Ecosystem Summit is Pi Network's first summit aimed at developers, held online from November 17 to 19, 2026. Day 1 (November 17) covered the developer platform, ecosystem initiatives (support programs for apps), and app showcases. The full Day 1 video premiered on Pi Network's official YouTube channel and runs 1 hour 45 minutes 5 seconds. Day 2 (November 18) covers AI and the ecosystem; Day 3 (November 19) kicks off the new hackathon "Pi Next" (a programming contest for building new apps), with a prize pool of 200,000 USDT (a digital currency tied to the US dollar).</p>
+<p>The Pi Ecosystem Summit is Pi Network's first summit aimed at developers, was held online from November 17 to 19, 2026. Day 1 (November 17) covered the developer platform, ecosystem initiatives (support programs for apps), and app showcases. The full Day 1 video premiered on Pi Network's official YouTube channel and runs 1 hour 45 minutes 5 seconds. Day 2 (November 18) covered AI and the ecosystem; Day 3 (November 19) kicked off the new hackathon "Pi Next" (a programming contest for building new apps), with a prize pool of 200,000 USDT (a digital currency tied to the US dollar). There was no video program on Day 3; the announcement was published on Pi's official pages.</p>
 <p>In her opening remarks, founder Chengdiao Fan gave the ecosystem's scale: over 60 million Engaged Pioneers (active users), over 300 Mainnet apps, over 420,000 Nodes (computers running Pi's network software), and over 18.1 million fully KYC-verified users. These are the figures as officially stated.</p>
 
 <h2>Result 1: AI-assisted developer experience (Developer Web Console and MCP)</h2>
@@ -105,7 +106,7 @@ img { max-width: 100%; }
 
 <h2>Result 5: Ecosystem initiatives (growth support, app directory, Launchpad)</h2>
 <h3>App Growth Initiative (up to 20 million Pi)</h3>
-<p>The "App Growth Initiative" is a new program sponsored by the Pi Foundation, announced with a marketing budget of up to 20 million Pi. Its purpose is to help apps grow without developers paying for the rewards themselves. Eligible developers can qualify for access to a portion of this budget based on the merits and performance of their applications, and use the Pi-funded incentive program to reach and engage KYC-verified users. As an example, when an eligible KYC-verified Pioneer invites another eligible KYC-verified Pioneer to use a participating app, both the referring Pioneer and the new user could each receive some Pi from the Foundation-sponsored incentive budget for qualifying participation. Exact eligibility requirements and reward amounts will be announced later.</p>
+<p>The "App Growth Initiative" is a new program sponsored by the Pi Foundation, announced with a marketing budget of up to 20 million Pi. Its purpose is to help apps grow without developers paying for the rewards themselves. Eligible developers can qualify for access to a portion of this budget based on the merits and performance of their applications, and use the Pi-funded incentive program to reach and engage KYC-verified users. As an example, when an eligible KYC-verified Pioneer invites another eligible KYC-verified Pioneer to use a participating app, both the referring Pioneer and the new user could each receive some Pi from the Foundation-sponsored incentive budget for qualifying participation. Exact eligibility requirements and reward amounts will be announced later. The same up-to-20-million-Pi framework appears again in the Pi Next announcement on Day 3, where it is described as marketing support separate from the 200,000 USDT prize pool.</p>
 <h3>Redesigned Pi App Directory</h3>
 <p>The Pi App Directory, the catalogue where users browse and open apps, was substantially redesigned. The existing "Ecosystem Directory Staking" mechanism, in which Pioneers stake Pi (set Pi aside as a show of support) to support apps and influence ranking, remains central. New discovery sections based on user interest, growth, and engagement were added.</p>
 <div class="tw"><table>
@@ -125,7 +126,35 @@ img { max-width: 100%; }
 <li><strong>Notification Center:</strong> Developers can send users ecosystem notifications from their Pi apps, shown in one place inside the Pi Browser. These are in-app notifications, not push notifications to phones. During the initial rollout, applications can send notifications to up to 20 users without additional approval; notifying more users requires approval. Native push notifications are the next step, subject to more selective and restrictive rules to prevent spam.</li>
 </ul>
 
-<h2>Result 6: CiDi Games (developer conversation and technical demo)</h2>
+<h2>Result 6: Pi Next (a 200,000 USDT hackathon)</h2>
+<p>Pi Next is a hackathon where developers and creators build new apps that use Pi. It started on November 19, 2026. Developers build their app on Pi's Developer Web Console or on SoloHost and launch it to Pi's ecosystem of more than 60 million engaged users, competing for 200,000 USDT in prizes. Developers, teams, businesses, and startups can enter.</p>
+<h3>Prizes and support</h3>
+<p>The total prize pool is 200,000 USDT, split into two awards. Do not confuse them with the marketing support of up to 20 million Pi, which is a separate program.</p>
+<div class="tw"><table>
+<tr><th>Category</th><th>Content</th></tr>
+<tr><td>Judges' Pick (50,000 USDT total)</td><td>1st place 25,000 USDT, 2nd place 15,000 USDT, 3rd place 10,000 USDT</td></tr>
+<tr><td>Community Engagement Awards (150,000 USDT total)</td><td>Awarded to up to 2 teams, selected based on a combination of judges' evaluation, real user engagement, retention, and community traction</td></tr>
+<tr><td>App Growth Initiative (up to 20 million Pi, separate from the prize pool)</td><td>Marketing support allocated by the Pi Foundation. It helps participating eligible applications attract and engage real users through platform-supported incentives. Eligible Pioneers may receive Pi rewards for using or inviting others to use new Pi apps</td></tr>
+</table></div>
+<p>The Judges' Pick criteria are: alignment with the Mainnet Listing Guidelines; Pi utility and alignment with overall community and ecosystem needs; technical completeness and innovation; UI/UX (how easy the screens are to use), accessibility, and ease of navigation; long-term utility on the Pi Mainnet blockchain; and uniqueness and distinctive use cases. SoloHost apps must meet the same standards of quality, functionality, and utility as Pi apps, but are subject to different listing requirements on SoloHost.</p>
+<h3>How to enter (two ways to build)</h3>
+<ul>
+<li><strong>Pi app:</strong> Create a Pi account and register for Pi Next in the Developer Web Console (a website where developers manage their Pi apps) under the Hackathon tab. All team members must register in order to participate in the hackathon and be considered for prizes. Then follow the console's instructions to build the app.</li>
+<li><strong>SoloHost app:</strong> Create a Pi account and register for Pi Next in the Developer Web Console under the Hackathon tab (again, all team members must register). Download and install Pi Desktop on your computer, then build the app and publish it through SoloHost. Use the AI skill in the public SoloHost GitHub repository — a set of instructions that teaches an AI assistant to do the preparation work — to let an AI coding assistant help prepare the app for publication. Enter your SoloHost App ID where prompted at submission.</li>
+</ul>
+<h3>What to build, and what to submit</h3>
+<p>The theme is open-ended: the app can focus on any use case addressing real human needs, as long as it follows the Mainnet Listing Requirements and brings real utility to the Pi Ecosystem. Build an app that people will use, and integrate Pi's built-in features such as Pi Authentication (Pi sign-in) and Pi Payments. Judges will look at what the app offers users and whether they come back. Up to three apps may be submitted per entry, according to the registration page.</p>
+<p>Submit the app through the Developer Web Console, including a demo video (3 minutes or less, posted publicly on YouTube or another video platform) and the team member list. The video should cover what the app is and what it does, a walkthrough of its features and interface, who the app is for, the problem or need it addresses, and how Pi is part of the experience, such as Pi sign-in or Pi payments. Every app must also have an English name, a logo that follows Pi's trademark guidelines, an accurate English description, preview images that show the app's interface, integration with PiNet, and a privacy policy. SoloHost apps must follow relevant SoloHost publishing requirements.</p>
+<h3>Schedule</h3>
+<ul>
+<li><strong>Starts:</strong> November 19, 2026 (according to the registration page).</li>
+<li><strong>Midpoint submission (optional):</strong> Submission details will be communicated via email to all participants who register for Pi Next in the Developer Web Console. Selected apps may gain additional visibility and receive valuable feedback to help improve their applications before the final submission deadline.</li>
+<li><strong>Final submission:</strong> Tuesday, January 5, 2027, 11:59 PM PST (Wednesday, January 6, 2027, 07:59 AM UTC; 16:59 JST). Only one team member should submit each app.</li>
+</ul>
+<p>Pi Next continues the work announced on Day 1: the Developer Web Console and the MCP server (Model Context Protocol, a standard way for AI programs to connect to outside tools). The official page explains that the console supports AI coding agents, and that the SoloHost AI skill demonstrated on Day 2 can help prepare an app for publication. With Pi Launchpad, DEX, and AMM coming to Mainnet in Q1 2027, Pi Next participants also get time to prepare for token issuance (as announced on Day 1).</p>
+<p>The registration page is reproduced in the appendix (see "Appendix: The Pi Next registration page").</p>
+
+<h2>Result 7: CiDi Games (developer conversation and technical demo)</h2>
 <p>The second half of Day 1 featured a conversation between founder Chengdiao Fan and Jeremy, co-founder of CiDi Games. CiDi Games is an HTML5 game platform (games that run in a web browser) playable directly in the Pi Browser, built around its original character IP "Pi Elf" and its game world "Elf Continent". It has been live for about six months and remains in beta (a public test version).</p>
 <p>The figures CiDi Games reported are as follows (as stated by the company).</p>
 <div class="tw"><table>
@@ -151,7 +180,7 @@ img { max-width: 100%; }
 <p>For local storage, the demo used a language preference (switching from English to Japanese) to show that a setting is saved in the browser and restored on relaunch. Storage is device-specific and does not guarantee cross-device synchronization or permanent storage. It was also stated in the video that CiDi Games' whitelist status for local storage access still needs confirmation.</p>
 <p>The demo also described a shared game SDK and common verification service that lets multiple games reuse the same integration. Meme War and Ian Reap were named as examples. However, the spelling of both titles rests on the subtitles alone and could not be confirmed against official material.</p>
 
-<h2>Result 7: Developer conversation (Resonant) — human participation in the AI and data economy</h2>
+<h2>Result 8: Developer conversation (Resonant) — human participation in the AI and data economy</h2>
 <p>Founder Chengdiao Fan spoke with Jay of the AI project Resonant. Resonant is a verification layer for AI decisions — a service that checks whether AI systems decide the way humans would. It collects human decisions on ethical dilemmas (for example, whom a domestic robot should save in a fire) and their metadata (information about those decisions), to measure whether AI agents decide the way humans would. About 1.7 million decisions have been collected so far, and Jay said the data becomes considerably more valuable at 15 million decisions (based on the spoken remarks alone).</p>
 <p>The conversation covered data as an important productive resource of the AI economy, Pi DataLab as the link between that demand and Pioneers, AI agents distributed through SoloHost on Pi Desktop or as Pi apps, and the value of Pi's identity-verified user base in proving humanness and lowering onboarding barriers (the hurdles new users face when joining) for AI companies. Jay said Resonant chose Pi for its global user exposure and for one-click, identity-verified sign-in that lowers user-acquisition costs.</p>
 <p>As advice for developers, Jay shared that writing an app in English only reaches about 40% of Pi's users, and that native translation increased user uptake two to three times (based on the spoken remarks alone). Pi's users speak nine languages, he said.</p>
@@ -159,26 +188,29 @@ img { max-width: 100%; }
 <p>Fan explained a plan to separate the Testnet and Mainnet distinction from the app-listing process. Listing in the app directory will be simplified as a single process, with the Testnet/Mainnet distinction applying only to operations involving wallets, such as payments.</p>
 <p>The Resonant app in the Pi Browser was mentioned at the close of the video, but its exact URL could only be heard from the subtitles and is unconfirmed.</p>
 
-<h2>Result 8: Other developer features</h2>
+<h2>Result 9: Other developer features</h2>
 <p>The blog post also introduced two further items.</p>
 <ul>
 <li><strong>More programming languages support:</strong> Pi's developer tools now cover a wider range of languages and frameworks (ready-made foundations for building apps), including Laravel, Go, FastAPI, Node/Express, and Ruby, making it easier to integrate Pi functionality into apps built with technologies developers already use.</li>
 <li><strong>Unified documentation:</strong> Developer documentation bringing application setup, authentication, payments, and testing resources into one place has been released.</li>
 </ul>
 
-<h2>Result 9: Migration and KYC</h2>
+<h2>Result 10: Migration and KYC</h2>
 <p>Day 1 contained no new announcement on Mainnet migration (the move of users' Pi balances onto the live network) or KYC. On KYC, the opening remarks cited over 18.1 million fully KYC-verified users, and the CiDi Games conversation mentioned the KYC survey collaboration. The previously reported Fast-Track fix (for 497,000 people) and the progress of second migrations were not mentioned in the Day 1 video or the blog post.</p>
 <p>Day 2 contained no new announcement on Mainnet migration or KYC either. On KYC, the Pi DataLab background cited the KYC verification record (over one million validators, more than 526 million validation tasks), and the conversation mentioned Pi Verify (a tool to verify people on the fly) and Pi Signing (Pi sign-in on external sites). The previously reported Fast-Track fix (for 497,000 people) and the progress of second migrations were not mentioned in the Day 2 video or the blog post.</p>
+<p>Day 3 contained no new announcement on Mainnet migration or KYC either. Neither the official Pi Next page nor the registration page mentions migration or KYC, and the latest blog post is still the Day 2 article (published November 18, 2026). The previously reported Fast-Track fix (for 497,000 people) and the progress of second migrations were not mentioned in the Day 3 announcements.</p>
 
-<h2>What comes next</h2>
+<h2>After the summit</h2>
+<p>The summit ended on November 19, 2026. What follows:</p>
 <ul>
-<li><strong>Day 3 (November 19, 2026):</strong> Official kickoff of the new hackathon "Pi Next", with a 200,000 USDT prize pool. The Day 2 blog post also revealed up to 20 million Pi as a shared marketing incentive program. There is no video programming; the announcement will be published on Pi's official channels.</li>
+<li><strong>Pi Next midpoint submission (optional):</strong> Details will be communicated by email to all registered participants. Selected apps gain additional visibility and feedback before the final deadline.</li>
+<li><strong>Pi Next final submission:</strong> Tuesday, January 5, 2027, 11:59 PM PST (Wednesday, January 6, 2027, 16:59 JST).</li>
+<li><strong>Pi Launchpad, DEX, and AMM coming to Mainnet in Q1 2027:</strong> Pi Next participants get time to prepare for token issuance.</li>
 </ul>
-<p>This report will be updated as Day 3 content is published.</p>
 
 <h2>Unconfirmed items</h2>
 <ul>
-<li>Four individual Day 1 demo videos have been published on Pi Network's official YouTube channel as of November 19, 2026. No individual Day 2 demo videos had been published as of 03:30 JST on the same day; only the full Day 2 video is available. If they are published later, their content will be checked and added to this report.</li>
+<li>Four individual Day 1 demo videos have been published on Pi Network's official YouTube channel as of November 19, 2026. Four individual Day 2 demo videos (Pi DataLab, the SoloHost AI skill, the CiDi Games technical integration, and the conversation with Resonant) were also published later that day.</li>
 <li>Exact eligibility requirements and reward amounts for the App Growth Initiative are stated in the blog post as to be announced later. They are unconfirmed at this time.</li>
 <li>The timing of Mainnet availability for x402 payments is undecided; the blog post states that more details will be shared ahead of its launch.</li>
 <li>For the first Mainnet token launch through Launchpad, no project name or specific date has been announced.</li>
@@ -189,7 +221,10 @@ img { max-width: 100%; }
 <li>The figures for Resonant's decisions (about 1.7 million, targeting 15 million) and for native translation (nine languages, about 40% reach in English only, two to three times the uptake) rest on the spoken remarks alone and could not be confirmed against official material.</li>
 <li>The spelling of the game titles Meme War and Ian Reap, named as examples in the CiDi Games demo, rests on the subtitles alone and could not be confirmed against official material.</li>
 <li>Information shown only on screen without spoken narration (details of console screens, slide details, and similar) cannot be confirmed from the subtitles and is not included in this report.</li>
-<li>As of the fetch at 03:28 JST on November 19, 2026, the official Summit page still showed Day 2 as "Upcoming", possibly reflecting a delayed page update. This report therefore cites the YouTube video page as the source for the Day 2 video.</li>
+<li>As of November 20, 2026, the official Summit page lists Day 3 (the Pi Next hackathon). At the fetch at 03:28 JST on November 19, 2026, it still showed Day 2 as "Upcoming", but that was corrected by a later update. This report therefore cites the YouTube video page as the source for the Day 2 video.</li>
+<li>No standalone Day 3 blog post had been published as of 08:53 JST on November 20, 2026; the latest blog post is still the Day 2 article (published November 18, 2026). If one is published later, its content will be checked and added to this report.</li>
+<li>Day 3 had no video program, and no Day 3 video had been published on Pi Network's official YouTube channel (checked at 08:57 JST on November 20, 2026). If one is published later, its content will be checked and added to this report.</li>
+<li>The fields of the Pi Next registration form are unconfirmed, because they appear only after signing in to the Developer Console. The date of the midpoint submission is also unconfirmed, because it will be communicated by email to registered participants.</li>
 <li>Auto-generated subtitles can misstate proper nouns and numbers, so names and figures in this report were cross-checked against the official blog post. Figures not covered by the blog post (such as CiDi Games' results and Resonant's decision counts) rest on the spoken remarks in the video alone, and the possibility of transcription error cannot be fully excluded.</li>
 </ul>
 
@@ -199,6 +234,9 @@ img { max-width: 100%; }
 <li>Day 2 full video (YouTube, Pi Network official channel, 1:34:11): <a href="https://www.youtube.com/watch?v=hAoaz-cDL-4">https://www.youtube.com/watch?v=hAoaz-cDL-4</a></li>
 <li>Official Pi blog post "Ecosystem Summit Begins" (published November 17, 2026): <a href="https://minepi.com/blog/ecosystem-summit-begins/">https://minepi.com/blog/ecosystem-summit-begins/</a></li>
 <li>Official Pi blog post "Pi Ecosystem Summit Day 2" (published November 18, 2026): <a href="https://minepi.com/blog/pi-ecosystem-summit-2/">https://minepi.com/blog/pi-ecosystem-summit-2/</a></li>
+<li>Official Pi Next page: <a href="https://minepi.com/pi-next/">https://minepi.com/pi-next/</a></li>
+<li>Pi Next registration page (Pi Developers, "Register for Pi Next"): <a href="https://developers.minepi.com/hackathon/register">https://developers.minepi.com/hackathon/register</a></li>
+<li>Day 2 demo videos (YouTube, Pi Network official channel): <a href="https://www.youtube.com/watch?v=EJrW57de70E">Pi DataLab Introduction and Demo</a>, <a href="https://www.youtube.com/watch?v=3lLzRz8Fbi0">Pi SoloHost AI Skill Demo</a>, <a href="https://www.youtube.com/watch?v=I_dItgrBD9o">CiDi Games: Integrating Pi Into Gaming Applications</a>, <a href="https://www.youtube.com/watch?v=swEWJ9I-HRQ">Pi Founder Chengdiao Fan Conversation with Resonant Developer</a></li>
 <li>Official Summit page: <a href="https://minepi.com/ecosystem-summit/">https://minepi.com/ecosystem-summit/</a></li>
 <li>Developer Web Console: <a href="https://developers.minepi.com/">https://developers.minepi.com/</a></li>
 <li>SoloHost GitHub repository: <a href="https://github.com/pi-node/solohost">https://github.com/pi-node/solohost</a></li>
@@ -227,6 +265,31 @@ img { max-width: 100%; }
 <tr><td>00:50</td><td>Developer conversation: Chengdiao Fan with Jay of Resonant (AI and the data economy, human participation)</td></tr>
 <tr><td>01:33</td><td>Closing: preview of Day 3 (Pi Next)</td></tr>
 </table></div>
+
+<h2>Appendix: The Pi Next registration page</h2>
+<p>The contents of the Pi Next registration page (Developer Web Console), as published in English. The page was opened directly and its full text was checked.</p>
+<p>Source: Pi Developers, "Register for Pi Next" (<a href="https://developers.minepi.com/hackathon/register">https://developers.minepi.com/hackathon/register</a>, checked November 20, 2026)</p>
+<p><strong>PI NEXT HACKATHON 2026 — Register for Pi Next</strong></p>
+<p>Register below to join the Pi Next hackathon, where developers and creators build innovative Pi-powered apps on Pi Network. Sign up to receive updates, resources, and instructions for participating.</p>
+<p><strong>Dates</strong></p>
+<ul>
+<li>Starts: Nov 19, 2026</li>
+<li>Deadline: Jan 5, 2027, 23:59 PST (Jan 6, 07:59 UTC)</li>
+</ul>
+<p><strong>Prize pool</strong>: 200,000 USDT</p>
+<p><strong>Who can enter</strong>: Developers, teams, businesses, and startups</p>
+<p><strong>What to submit</strong>: Up to 3 apps — Mainnet Pi apps and SoloHost apps</p>
+<p><strong>What is Pi Next?</strong></p>
+<p>Developers, startups, and innovators worldwide are invited to join Pi Next: Pi Network's all-new hackathon. Build your application here on Pi's Developer Web Console or on SoloHost and launch into Pi's 60+ million Engaged User ecosystem to compete for a prize pool of 200,000 USDT.</p>
+<p><strong>Judging and prizes</strong></p>
+<ol>
+<li>Judges' Pick: 50,000 USDT total (1st place: 25,000 USDT; 2nd place: 15,000 USDT; 3rd place: 10,000 USDT)</li>
+<li>Community Engagement Awards: 150,000 USDT total — awarded to up to 2 teams, selected based on a combination of judges' evaluation, real user engagement, retention, and community traction</li>
+<li>App Growth Initiative: Up to 20 million Pi has been allocated to help participating eligible applications attract and engage real users through platform-supported incentives. This is separate from the prize pool.</li>
+</ol>
+<p><strong>What to build</strong></p>
+<p>Pi Next features an open-ended theme to offer you the freedom to bring your ideas to life. Your app can focus on any use case addressing real human needs, as long as it follows the Mainnet Listing Requirements and brings real utility to the Pi Ecosystem. Build an app that people will use, and integrate Pi's built-in features such as Pi authentication and Pi payments. Judges will look at what your app offers users and whether they come back.</p>
+<p>The full hackathon rules are on the Pi Next info page (<a href="https://minepi.com/pi-next/">https://minepi.com/pi-next/</a>).</p>
 
 <p class="small">This report is based only on official announcements (video, blog post, and official page). Anything that could not be officially confirmed is marked "unconfirmed" and is not filled in by speculation.</p>
 </main>
